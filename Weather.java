@@ -7,6 +7,7 @@ public class Weather {
     private boolean rain;
     private boolean umbrella;
     private Date week;
+    private String day;
 
 
     public Weather(){
@@ -58,6 +59,14 @@ public class Weather {
 
     public void setWeek(Date week) {
         this.week = week;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
     }
 
 }
