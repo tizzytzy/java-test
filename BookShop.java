@@ -1,14 +1,16 @@
-public class Book {
+import java.util.ArrayList;
+
+public class BookShop {
 
     private String name;
     private double price;
 
-    public Book(){
+    public BookShop(){
 
 
     }
 
-    public Book(String name){
+    public BookShop(String name){
 
         this.name = name;
 
@@ -35,3 +37,4 @@ public class Book {
 
 
 }
+

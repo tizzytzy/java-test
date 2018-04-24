@@ -5,13 +5,11 @@ public class Customer {
     private int age;
     private String sex;
 
-    public void buy(){
 
-        System.out.println("Customer buy");
+    public Customer(){
+
 
     }
-
-
 
     public Customer(String name){
 
@@ -44,6 +42,4 @@ public class Customer {
     }
 
 
-    public void buy(String name) {
-    }
 }
