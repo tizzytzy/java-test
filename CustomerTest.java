@@ -4,6 +4,7 @@ public class CustomerTest {
 
     public static void main(String[] args) {
 
+
         ArrayList<BookShop> list2 = new ArrayList();
 
         BookShop book = new BookShop("Java编程思想(第4版)");
@@ -13,7 +14,7 @@ public class CustomerTest {
         book1.setPrice(53.66);
 
         BookShop book2 = new BookShop("人类简史");
-        book2.setPrice(46.24);
+        book1.setPrice(46.24);
 
         BookShop book3 = new BookShop("三体");
         book3.setPrice(17.1);
@@ -21,26 +22,34 @@ public class CustomerTest {
         BookShop book4 = new BookShop("算法导论");
         book4.setPrice(101.9);
 
+        list2.add(book);
+        list2.add(book1);
+        list2.add(book2);
+        list2.add(book3);
+        list2.add(book4);
+
+
 
         ArrayList<Customer> list3 = new ArrayList();
 
-        Customer customer = new Customer("小Q");
-        customer.setAge(22);
-        customer.setSex("男");
+        Customer customer1 = new Customer("小Q");
+        customer1.setAge(22);
+        customer1.setSex("男");
 
-        Customer customer1 = new Customer("小M");
-        customer1.setAge(18);
-        customer1.setSex("女");
-
-
+        Customer customer2 = new Customer("小M");
+        customer2.setAge(18);
+        customer2.setSex("女");
 
 
-    }
+        list3.add(customer1);
+        list3.add(customer2);
 
-    public void buy (BookShop bookShop){
 
-        System.out.println(bookShop.getName());
+        customer1.buy(list2);
+        customer2.buy(list2);
 
+        String buy = "book4";
+        boolean isSame = buy.equals("book4");
 
     }
 
