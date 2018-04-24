@@ -5,7 +5,7 @@ public class Todo {
     private String date;
 
 
-    public void print() {
+    public void print(String s) {
         System.out.println(this.date + " | " + this.content);
     }
 
@@ -25,5 +25,6 @@ public class Todo {
     public void setDate(String date) {
         this.date = date;
     }
+
 
 }
