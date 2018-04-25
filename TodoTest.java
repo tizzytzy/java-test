@@ -7,7 +7,7 @@ public class TodoTest {
        Todo todo = new Todo();
        todo.setDate("2018-4-1");
        todo.setContent("我开始学习Java");
-       todo.print(todo.getDate() + " | "+ todo.getContent() );
+       todo.print();
 
     }
 

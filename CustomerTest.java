@@ -48,8 +48,10 @@ public class CustomerTest {
         customer1.buy(list2);
         customer2.buy(list2);
 
-        String buy = "book4";
-        boolean isSame = buy.equals("book4");
+
+
+
+
 
     }
 
