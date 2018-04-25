@@ -35,10 +35,12 @@ public class CustomerTest {
         Customer customer1 = new Customer("小Q");
         customer1.setAge(22);
         customer1.setSex("男");
+        customer1.setWantBook("算法导论");
 
         Customer customer2 = new Customer("小M");
         customer2.setAge(18);
         customer2.setSex("女");
+        customer2.setWantBook("三体");
 
 
         list3.add(customer1);
