@@ -48,8 +48,8 @@ public class CustomerTest {
 
 
 
-        customer1.pay(book4);
-        customer2.pay(book3);
+        customer1.buy(list2);
+        customer2.buy(list2);
 
 
 
