@@ -57,18 +57,31 @@ public class Customer {
 
     public void buy(ArrayList<BookShop> list2){
 
+        pay(list2);
+
+
             for (BookShop book : list2) {
+
                 if (this.wantBook.equals(book.getName())) {
 
-                    System.out.println(this.name + "是一位" + this.age + "岁的" + this.sex + "生" + "买了" + book.getName());
+                    System.out.println(this.name + "是一位" + this.age + "岁的" + this.sex + "生" + "买了" + book.getName() + "TA支付了" + book.getPrice() + "元");
 
 
                 }
 
         }
+        }
+
+    public void pay(ArrayList<BookShop> list2){
+
+        for (BookShop book : list2){
+            if (this.wantBook.equals(book.getName())) {
+
+
+            }
+        }
+    }
 
 
 
-
-}
 }

@@ -49,6 +49,8 @@ public class CustomerTest {
 
         customer1.buy(list2);
         customer2.buy(list2);
+        customer1.pay(list2);
+        customer2.pay(list2);
 
 
 
