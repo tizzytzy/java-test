@@ -47,10 +47,9 @@ public class CustomerTest {
         list3.add(customer2);
 
 
-        customer1.buy(list2);
-        customer2.buy(list2);
-        customer1.pay(list2);
-        customer2.pay(list2);
+
+        customer1.pay(book4);
+        customer2.pay(book3);
 
 
 
