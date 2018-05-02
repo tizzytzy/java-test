@@ -6,6 +6,8 @@ public class Album {
     private String name;
     private int size;
     private Date creatTime;
+
+
     ArrayList<Picture> pictures;
 
     public Album(){
@@ -18,7 +20,6 @@ public class Album {
         this.name = name;
 
     }
-
 
     public String getName() {
         return name;
@@ -41,6 +42,14 @@ public class Album {
 
     public void setCreatTime(Date creatTime) {
         this.creatTime = creatTime;
+    }
+
+    public ArrayList<Picture> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(ArrayList<Picture> pictures) {
+        this.pictures = pictures;
     }
 
 

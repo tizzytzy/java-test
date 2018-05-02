@@ -6,7 +6,7 @@ public class CloudTest {
     public static void main(String[] args) {
 
         Calendar calendar = Calendar.getInstance();
-        ArrayList<Picture> list = new ArrayList();
+        ArrayList<Picture> pictureData = new ArrayList();
         Picture picture = new Picture("1（11）.jpg");
         picture.setSize(20);
         picture.setPlace("上海");
@@ -48,14 +48,14 @@ public class CloudTest {
 
         calendar.clear();
 
-        list.add(picture);
-        list.add(picture1);
-        list.add(picture2);
-        list.add(picture3);
-        list.add(picture4);
+        pictureData.add(picture);
+        pictureData.add(picture1);
+        pictureData.add(picture2);
+        pictureData.add(picture3);
+        pictureData.add(picture4);
 
 
-        ArrayList<Album> list1 = new ArrayList();
+        ArrayList<Album> albumData = new ArrayList();
         Album album = new Album("上海");
         album.setSize(500);
         calendar.set(2017,4,30);
@@ -91,19 +91,17 @@ public class CloudTest {
 
         calendar.clear();
 
-        list1.add(album);
-        list1.add(album1);
-        list1.add(album2);
-        list1.add(album3);
-        list1.add(album4);
+        albumData.add(album);
+        albumData.add(album1);
+        albumData.add(album2);
+        albumData.add(album3);
+        albumData.add(album4);
 
-        ArrayList<CloudStorage> list2 = new ArrayList();
         CloudStorage cloudStorage = new CloudStorage();
+        cloudStorage.setAlbums(albumData);
 
 
-        list2.add(cloudStorage);
-
-        cloudStorage.upload(list);
+        cloudStorage.upload(pictureData);
 
 
 
