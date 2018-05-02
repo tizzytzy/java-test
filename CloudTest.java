@@ -99,6 +99,7 @@ public class CloudTest {
 
         CloudStorage cloudStorage = new CloudStorage();
         cloudStorage.setAlbums(albums);
+        cloudStorage.setName("我的云相册");
 
 
         cloudStorage.upload(pictures);
