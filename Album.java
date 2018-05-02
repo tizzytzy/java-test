@@ -6,8 +6,6 @@ public class Album {
     private String name;
     private int size;
     private Date creatTime;
-
-
     ArrayList<Picture> pictures;
 
     public Album(){
@@ -51,6 +49,8 @@ public class Album {
     public void setPictures(ArrayList<Picture> pictures) {
         this.pictures = pictures;
     }
+
+
 
 
 

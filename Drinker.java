@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class Drinker {
+    private String name;
+    private String wantDrink;
 
     public Drinker(){}
 
@@ -10,9 +12,6 @@ public class Drinker {
         this.name = name;
 
     }
-
-    private String name;
-    private String wantDrink;
 
     public String getName() {
         return name;

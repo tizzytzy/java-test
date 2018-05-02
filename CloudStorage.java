@@ -5,6 +5,10 @@ public class CloudStorage {
 
     ArrayList<Album> albums;
 
+    public CloudStorage(){
+
+
+    }
 
     public ArrayList<Album> getAlbums() {
         return albums;
@@ -15,23 +19,17 @@ public class CloudStorage {
     }
 
 
-    public CloudStorage(){
-
-
-    }
 
 
 
 
+    public void upload(ArrayList<Picture> pictures){
 
-
-    public void upload(ArrayList<Picture> pictureData){
-
-        for (Picture picture : pictureData){
+        for (Picture picture : pictures){
             for (Album album : albums) {
                 if (album.getName().equals(picture.getPlace())) {
 
-                    System.out.println(this.albums  + "是" + album.getCreatTime() + album.getName() + album.getPictures());
+                    System.out.println(this.albums + "创建于" + album.getCreatTime() + "地点是" + album.getName() + "，这个相册内存是" + album.getSize() + "KB" + album.getPictures());
 
 
                 }
