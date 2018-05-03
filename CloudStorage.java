@@ -35,8 +35,13 @@ public class CloudStorage {
 
         for (Picture picture : pictures){
             for (Album album : albums) {
-                if (album.getName().equals(picture.getPlace())) {
-                    System.out.println(this.name + ":" + album.getName() +   "建立于" +album.getCreatTime() + "相册内存是" + album.getSize());
+                if (picture.getPlace().equals(album.getName())) {
+                   if (album.getPictures() == null){
+                       album.setPictures(new ArrayList<Picture>());
+
+                       }
+
+                       album.getPictures().add(picture);
 
                 }
 
